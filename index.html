@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Nexcent</title>
+    <title>Document</title>
   </head>
   <body>
     <header>
@@ -13,12 +13,23 @@
           <img src="assets/LogoHeader.svg" alt="" />
         </div>
         <div class="nav-menu">
-          <a href="#">Home</a>
-          <a href="#">Features</a>
-          <a href="#">Community</a>
-          <a href="#">Blog</a>
-          <a href="#">Pricing</a>
-          <button>
+          <a class="nav_links" href="#">Home</a>
+          <a class="nav_links" href="#">Features</a>
+          <a class="nav_links" href="#">Community</a>
+          <a class="nav_links" href="#">Blog</a>
+          <a class="nav_links" href="#">Pricing</a>
+          <button class="burger_btn" onclick="openBurgerMenu()">
+            <img src="assets/Burger.svg" alt="" />
+          </button>
+
+          <div class="burger_menu" id="burgerMenu">
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">Community</a>
+            <a href="#">Blog</a>
+            <a href="#">Pricing</a>
+          </div>
+          <button class="reg_button">
             Register now
             <svg
               height="10"
@@ -723,7 +734,7 @@
               </svg>
               <h3 class="light_green">
                 Meet all customers
-                <svg
+                <svg style="display: inline-block!IMPORTANT;"
                   width="18"
                   height="17"
                   viewBox="0 0 18 17"
@@ -886,13 +897,14 @@
               <h3>Stay up to date</h3>
               <div class="input">
                 <input type="text" placeholder="Your email adress" />
-                <button><img src="assets/Send.svg" alt=""></button>
+                <button><img src="assets/Send.svg" alt="" /></button>
               </div>
             </div>
           </div>
         </div>
       </footer>
     </content>
+
+    <script src="script.js"></script>
   </body>
 </html>
-
