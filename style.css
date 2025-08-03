@@ -694,13 +694,19 @@ footer .input button img {
   nav {
     width: 450px;
   }
+  .block6 h3 {
+    width: 270px;
+  }
+  .block6 p {
+    width: 270px;
+  }
 }
 @media only screen and (max-width: 450px) {
   .block1 img {
     display: none;
   }
   .block1 .content_left{
-    margin: 0 auto;
+    margin: 200px auto 0;
     text-align: center;
   }
   .block1 p {
@@ -741,5 +747,45 @@ footer .input button img {
   }
   .block6 p {
     width: 200px;
+  }
+  .block2 .list {
+    flex-wrap: wrap;
+    width: auto;
+  }
+  .block2 p {
+    width: 300px;
+  }
+  .block2 h2 {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .block2 .card_list p {
+    width: auto;
+  }
+  .block5 p {
+    width: 300px;
+  }
+  .block5 h2 {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  nav .reg_button {
+    width: 100px!IMPORTANT;
+  }
+  .content {
+    width: 350px;
+  }
+  nav {
+    width: 350px;
+  }
+  .info {
+    grid-template-columns: 200px;
+  }
+  .block6 h3 {
+    width: 160px;
+  }
+  .block6 p {
+    width: 160px;
   }
 }
